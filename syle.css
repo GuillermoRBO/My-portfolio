@@ -1,0 +1,407 @@
+
+body{
+  background: linear-gradient(27deg, #FCE8A5ff, #FCE69Cff, #EAB8B2ff, #CA33FEff, #F7D5A3ff);
+}
+.main_logo{
+    border-radius: 0.6rem;
+}
+
+.text-bg-grad {
+    
+  background: linear-gradient(27deg, #FCE8A5ff, #FCE69Cff, #EAB8B2ff, #CA33FEff, #F7D5A3ff);
+}
+
+.mainpage{
+    font-family: 'IBM Plex Serif', serif;
+    padding: 5rem;
+    z-index: 0;
+
+}
+
+.shadow-lg{
+  z-index: 1;
+}
+
+.word{
+    color: #CA33FEff;
+}
+
+.cv{
+  margin-top: 2rem;
+}
+
+h3{
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.row{
+    padding-top: 1rem;
+}
+
+  
+  .buttons {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+    height: 7rem;
+    
+  }
+  
+  .blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    color: #b862af;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform .7s; /* Animation */
+  }
+  .blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px 
+   
+
+  }
+  .blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 20px;
+  }
+  .blob-btn:hover {
+    color: #FFFFFF;
+    border-radius: 30px;
+    transform: scale(1.2);
+  }
+  .blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+  }
+  .blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #ffffff;
+  }
+  .blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+  }
+  .blob-btn__blob {
+    position: absolute;
+    top: 0px;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(27deg, #FCE8A5ff, #FCE69Cff, #EAB8B2ff, #CA33FEff, #F7D5A3ff);
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.8s;
+  }
+  @supports (filter: url("#goo")) {
+    .blob-btn__blob {
+      transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+  }
+  .blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+  }
+  .blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.1s;
+  }
+  .blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+  }
+  .blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+  }
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+  }
+  @supports (filter: url("#goo")) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.4);
+    }
+  }
+ 
+.col-md-4{
+    height: 100px;
+}
+  
+.jumbotron{
+    background-color: rgb(68, 26, 26);
+/*margin: 0px 200px 0px 0;*/
+border-radius: 0% 50px 50px 0%;
+font-family: 'IBM Plex Serif', serif;
+    
+}
+
+
+.gradient-text{
+   
+  
+  /* Create the gradient. */
+
+  
+  
+  background: linear-gradient(225deg, rgba(23,23,22,1) 0%, rgba(44,29,56,1) 0%, rgba(40,26,52,1) 0%, rgba(94,75,9,1) 15%, rgba(24,24,24,1) 100%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+
+}
+
+/* [1] The container */
+.img-hover {
+  height: 250px; /* [1.1] Set it as per your need */
+width: 550px !important;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.card:hover img {
+  transform: scale(2);
+}
+.mondrian{
+  border-radius: 0px 30px 30px 0px;
+}
+
+.tindog{
+  border-radius: 0px 30px 30px 0px;
+}
+
+.motivation{
+  border-radius: 0px 30px 30px 0px;
+}
+
+
+.img-hover2 {
+  height: 250px; /* [1.1] Set it as per your need */
+width: 198px !important;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover2 img {
+  transition: transform .5s ease;
+}
+
+.img-hover3 {
+  height: 250px; /* [1.1] Set it as per your need */
+width: 228px !important;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover3 img {
+  transition: transform .5s ease;
+}
+
+.card{
+  border-radius: 30px;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.languages{
+  font-size: 13px;
+}
+
+.Portfolio-Attempt{
+  font-family: 'IBM Plex Serif', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+
+
+
+/* The actual timeline box to position  (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container1 {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+ 
+
+}
+
+/* The circles on the timeline */
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+
+.left{
+ left: 0%;
+}
+
+/* Place the container to the right */
+.right{
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -13px;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height:3
+  0px;
+  position: absolute;
+  top: 18px;
+  width: 0;
+  z-index: 1;
+  right: 27px;
+  border: medium solid rgb(11, 11, 11);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(9, 9, 9);
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0px;
+  position: absolute;
+  top: 18px;
+  width: 0;
+  z-index: 1;
+  left: 27px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(13, 13, 13) transparent transparent;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(2, 2, 2);
+  position: relative;
+  border-radius: 6px;
+
+}
+
+.text-grad{
+  background: linear-gradient(
+    27deg, #FCE8A5ff, #FCE69Cff, #EAB8B2ff, #CA33FEff, #F7D5A3ff);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }}
